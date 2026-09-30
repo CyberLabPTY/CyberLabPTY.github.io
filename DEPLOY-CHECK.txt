@@ -1,0 +1,19 @@
+CYBER LAB v1.15 - GITHUB READY
+
+Final static checks:
+- index.html at repository root: OK
+- Active CSS files present: OK
+- Active JavaScript files present: OK
+- JavaScript syntax (node --check): OK
+- GeoJSON dependencies present: OK
+- Globe texture images present: OK
+- Static duplicate IDs in index.html: NONE
+- Mobile typography layer loaded: OK
+- Cyber interaction effects loaded: OK
+- Cyber Assistant UI loaded: OK
+- Assistant: open / minimize / restore / close logic included
+- Android fallback: 100vh before 100dvh included
+- .nojekyll included for GitHub Pages
+
+Important:
+The assistant currently provides local guided responses and site navigation. It is not connected to an external generative AI API yet.

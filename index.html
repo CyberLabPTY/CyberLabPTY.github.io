@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#02070c">
+<title>Cyber Lab | Technical Cybersecurity Portfolio</title>
+<meta name="description" content="Portafolio técnico interactivo de ciberseguridad, laboratorios y simuladores.">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/systems-lab.css">
+<link rel="stylesheet" href="./css/network-lab.css">
+<link rel="stylesheet" href="./css/soc-lab.css">
+<link rel="stylesheet" href="./css/threat-lab.css">
+<link rel="stylesheet" href="./css/osint-lab.css">
+<link rel="stylesheet" href="./css/cloud-lab.css">
+<link rel="stylesheet" href="./css/crypto-lab.css">
+<link rel="stylesheet" href="./css/forensics-lab.css">
+<link rel="stylesheet" href="./css/intelligence-bridge.css">
+<link rel="stylesheet" href="./css/guided-experience.css">
+<link rel="stylesheet" href="./css/professional-ui-v111.css">
+<link rel="stylesheet" href="./css/portfolio-layer.css">
+<link rel="stylesheet" href="./css/professional-navigation.css">
+<link rel="stylesheet" href="./css/mobile-typography-unifier.css">
+<link rel="stylesheet" href="./css/cyber-assistant.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="cyber-app">
+<canvas id="cyber-canvas"></canvas>
+<div id="globe-control-zone" aria-label="Control interactivo del globo"></div>
+<div id="geo-hud"><span id="geo-hud-status">GLOBAL SCAN</span><strong id="geo-hud-title">TOCA LA TIERRA</strong><small id="geo-hud-meta">País · continente · océano · órbita</small></div>
+<header class="topbar">
+<div class="brand"><span class="brand-icon"></span><div><strong>CYBER LAB</strong><small>TECHNICAL SECURITY PORTFOLIO</small></div></div>
+<div class="online"><span></span>SYSTEM ONLINE</div>
+</header>
+<main class="hero">
+<section class="intro">
+<div class="eyebrow">DIGITAL SECURITY EXPERIENCE</div>
+<h1>EXPLORA EL MUNDO <span>DE LA CIBERSEGURIDAD</span></h1>
+<p>Portafolio técnico interactivo para explorar redes, privacidad, amenazas, OSINT, cloud, inteligencia digital y proyectos educativos.</p>
+<div class="actions"><button id="explore-btn">EXPLORAR SISTEMA →</button><button id="reset-btn" class="ghost">VISTA GLOBAL</button></div>
+<div class="stats"><div><b>3D</b><small>INTERACTIVE GLOBE</small></div><div><b>LOCAL</b><small>BROWSER EXECUTION</small></div><div><b>08</b><small>SECURITY LABS</small></div></div>
+</section>
+<aside class="intel">
+<small>CYBER INTELLIGENCE</small>
+<h2 id="panel-title">Global Network</h2>
+<p id="panel-text">Selecciona una categoría y luego toca un nodo del planeta.</p>
+<div class="data"><span>NETWORK STATUS</span><b>SECURE</b></div>
+<div class="data"><span>ACTIVE NODES</span><b id="node-count">07</b></div>
+<div class="selection"><small>SELECTED NODE</small><b id="selected-node">Ninguno</b><span id="selected-info">Toca un punto luminoso del globo.</span></div>
+</aside>
+</main>
+<section class="categories">
+<small>EXPLORE BY CRITERIA</small>
+<div class="category-list">
+<button class="category active" data-category="all">GLOBAL</button>
+<button class="category" data-category="threats">THREATS</button>
+<button class="category" data-category="privacy">PRIVACY</button>
+<button class="category" data-category="networks">NETWORKS</button>
+<button class="category" data-category="osint">OSINT</button>
+<button class="category" data-category="cloud">CLOUD</button>
+<button class="category" data-category="education">EDUCATION</button>
+<button class="category" data-category="oceans">OCEANS</button>
+<button class="category" data-category="orbital">ORBITAL</button>
+</div>
+</section>
+<section id="ops-core" aria-label="Cyber Operations Core"></section>
+<div class="fps" id="fps">GPU READY</div>
+<div class="boot" id="boot">INITIALIZING CYBERSPACE...</div>
+</div>
+<script type="module" src="./js/app.js"></script>
+<script src="./js/systems-lab.js"></script>
+<script src="./js/network-lab.js"></script>
+<script src="./js/soc-lab.js"></script>
+<script src="./js/threat-lab.js"></script>
+<script src="./js/osint-lab.js"></script>
+<script src="./js/cloud-lab.js"></script>
+<script src="./js/crypto-lab.js"></script>
+<script src="./js/forensics-lab.js"></script>
+<script src="./js/intelligence-bridge.js"></script>
+<script src="./js/geo-context-adapter.js"></script>
+<script src="./js/geo-country-validator.js"></script>
+<script src="./js/geo-context-retainer.js"></script>
+<script src="./js/marine-intelligence.js"></script>
+<script src="./js/guided-experience.js"></script>
+<script src="./js/portfolio-layer.js"></script>
+<script src="./js/professional-navigation.js"></script>
+<script src="./js/cyber-assistant.js"></script>
+<script type="module" src="./js/ops-core.js"></script>
+</body>
+</html>

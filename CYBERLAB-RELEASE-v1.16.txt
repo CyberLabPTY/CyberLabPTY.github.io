@@ -1,0 +1,20 @@
+CYBER LAB — GITHUB READY v1.16
+
+Final publication package.
+
+Included:
+- Responsive interface and unified mobile typography
+- Professional navigation and aligned layout
+- Cyber-style button/touch interaction effects
+- 3D globe and local GeoJSON resources
+- Defensive training labs
+- Professional portfolio layer
+- Cyber Assistant full-window UI with open, minimize, restore and close controls
+- Local guided assistant responses (no exposed external API key)
+- Android-friendly fullscreen fallback (vh + dvh)
+
+Publication target:
+- GitHub repository / GitHub Pages
+
+Important:
+The assistant interface is functional as a local site guide. It is not connected to an external generative AI backend in this release.
