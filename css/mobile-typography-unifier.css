@@ -1,0 +1,144 @@
+/* CYBER LAB - MOBILE TYPOGRAPHY UNIFIER v1.10.3 */
+
+@media(max-width:600px){
+  :root{
+    --cyber-title-xl:30px;
+    --cyber-title-lg:21px;
+    --cyber-title-md:17px;
+    --cyber-body:14.5px;
+    --cyber-body-sm:13px;
+    --cyber-meta:11px;
+    --cyber-button:12px;
+    --cyber-line:1.58;
+  }
+
+  /* ===== GUIA ===== */
+  #guided-experience .guide-head h2{
+    font-size:var(--cyber-title-xl) !important;
+    line-height:1.12 !important;
+  }
+
+  #guided-experience .guide-kicker,
+  #guided-experience .guide-glossary-title,
+  #guided-experience .guide-step-num{
+    font-size:var(--cyber-meta) !important;
+    line-height:1.4 !important;
+  }
+
+  #guided-experience .guide-summary,
+  #guided-experience .guide-step span,
+  #guided-experience .guide-live p,
+  #guided-experience .guide-term span{
+    font-size:var(--cyber-body) !important;
+    line-height:var(--cyber-line) !important;
+  }
+
+  #guided-experience .guide-step b,
+  #guided-experience .guide-live b,
+  #guided-experience .guide-term b{
+    font-size:var(--cyber-title-md) !important;
+    line-height:1.3 !important;
+  }
+
+  #guided-experience .guide-mode-btn,
+  #guided-experience .guide-action{
+    font-size:var(--cyber-button) !important;
+    line-height:1.25 !important;
+    letter-spacing:.10em !important;
+  }
+
+  /* ===== CATEGORIAS ===== */
+  .category-list .category,
+  .categories .category{
+    font-size:var(--cyber-button) !important;
+    line-height:1.2 !important;
+    letter-spacing:.08em !important;
+  }
+
+  /* ===== INTELLIGENCE BRIDGE ===== */
+  .intel-bridge-kicker,
+  .intel-bridge small,
+  .intel-bridge .bridge-kicker,
+  .intel-bridge .bridge-meta,
+  #intel-category{
+    font-size:var(--cyber-meta) !important;
+    line-height:1.4 !important;
+  }
+
+  .intel-bridge h2,
+  .intel-bridge h3,
+  #intel-node,
+  #selected-node{
+    font-size:var(--cyber-title-lg) !important;
+    line-height:1.2 !important;
+  }
+
+  .intel-bridge p,
+  #intel-info,
+  #selected-info{
+    font-size:var(--cyber-body) !important;
+    line-height:var(--cyber-line) !important;
+  }
+
+  .intel-bridge button,
+  .intel-bridge .intel-bridge-btn{
+    font-size:var(--cyber-button) !important;
+    line-height:1.25 !important;
+    letter-spacing:.08em !important;
+  }
+
+  /* ===== OPS CORE ===== */
+  #ops-core .section-kicker,
+  #ops-core .ops-kicker,
+  #ops-core .metric-label,
+  #ops-core .panel-kicker,
+  #ops-core .console-kicker,
+  #ops-core small{
+    font-size:var(--cyber-meta) !important;
+    line-height:1.4 !important;
+  }
+
+  #ops-core h2,
+  #ops-core h3,
+  #ops-core .ops-title,
+  #ops-core .module-title,
+  #ops-core .panel-title{
+    font-size:var(--cyber-title-lg) !important;
+    line-height:1.2 !important;
+  }
+
+  #ops-core p,
+  #ops-core .ops-desc,
+  #ops-core .panel-desc,
+  #ops-core .console-log,
+  #ops-core .module-copy,
+  #ops-core li{
+    font-size:var(--cyber-body) !important;
+    line-height:var(--cyber-line) !important;
+  }
+
+  #ops-core button,
+  #ops-core .ops-btn,
+  #ops-core .ops-module,
+  #ops-core .module-button{
+    font-size:var(--cyber-button) !important;
+    line-height:1.25 !important;
+    letter-spacing:.08em !important;
+  }
+
+  /* ===== CAJAS GENERALES ===== */
+  #ops-core .metric-value,
+  #ops-core .stat-value,
+  #ops-core .ops-metric strong{
+    font-size:var(--cyber-title-md) !important;
+    line-height:1.2 !important;
+  }
+
+  #ops-core .metric,
+  #ops-core .stat,
+  .intel-bridge,
+  #guided-experience .guide-step,
+  #guided-experience .guide-live{
+    overflow:hidden;
+  }
+}

@@ -1,0 +1,297 @@
+/* ===== SYSTEMS LAB v1.1 ===== */
+.ops-visual{
+  margin-top:22px;
+}
+
+.syslab{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(114,247,232,.12);
+  background:linear-gradient(145deg,rgba(2,12,17,.98),rgba(2,7,11,.98));
+}
+
+.syslab::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:.18;
+  background-image:linear-gradient(rgba(114,247,232,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(114,247,232,.025) 1px,transparent 1px);
+  background-size:24px 24px;
+}
+
+.syslab-top{
+  position:relative;
+  z-index:2;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:11px 13px;
+  border-bottom:1px solid rgba(255,255,255,.055);
+  color:#67838c;
+  font-size:7px;
+  letter-spacing:.16em;
+}
+
+.syslab-top strong{
+  color:#84f9e9;
+  font-weight:600;
+}
+
+.syslab-stage{
+  position:relative;
+  z-index:2;
+  min-height:260px;
+  overflow:hidden;
+}
+
+.syslab-radar{
+  position:absolute;
+  width:210px;
+  height:210px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  border:1px solid rgba(114,247,232,.07);
+  border-radius:50%;
+  box-shadow:0 0 80px rgba(63,225,211,.025) inset;
+}
+
+.syslab-radar::before,
+.syslab-radar::after{
+  content:"";
+  position:absolute;
+  border:1px solid rgba(114,247,232,.06);
+  border-radius:50%;
+  inset:25%;
+}
+
+.syslab-radar::after{
+  inset:43%;
+}
+
+.syslab-links{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+
+.syslab-link{
+  stroke:rgba(114,247,232,.30);
+  stroke-width:1;
+  stroke-dasharray:6 8;
+  animation:sysLinkFlow 2.8s linear infinite;
+}
+
+@keyframes sysLinkFlow{
+  to{stroke-dashoffset:-28}
+}
+
+.sys-node{
+  position:absolute;
+  width:92px;
+  min-height:70px;
+  transform:translate(-50%,-50%);
+  border:1px solid rgba(114,247,232,.20);
+  background:rgba(3,18,23,.92);
+  color:#aac4c8;
+  cursor:pointer;
+  text-align:left;
+  padding:11px;
+  transition:.22s ease;
+}
+
+.sys-node::before{
+  content:"";
+  position:absolute;
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  right:9px;
+  top:9px;
+  background:#6af0a8;
+  box-shadow:0 0 10px rgba(106,240,168,.85);
+}
+
+.sys-node.active{
+  border-color:rgba(114,247,232,.80);
+  background:rgba(20,76,77,.35);
+  box-shadow:0 0 35px rgba(64,232,215,.10),inset 0 0 25px rgba(64,232,215,.035);
+}
+
+.sys-node b{
+  display:block;
+  color:#e8ffff;
+  font-size:10px;
+  letter-spacing:.08em;
+}
+
+.sys-node span{
+  display:block;
+  margin-top:5px;
+  color:#56727a;
+  font-size:7px;
+  letter-spacing:.11em;
+}
+
+.sys-node.n1{left:50%;top:26%}
+.sys-node.n2{left:25%;top:70%}
+.sys-node.n3{left:75%;top:70%}
+
+.syslab-detail{
+  position:relative;
+  z-index:2;
+  padding:15px;
+  border-top:1px solid rgba(255,255,255,.055);
+}
+
+.syslab-detail-head{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.syslab-detail small{
+  color:#527079;
+  font-size:7px;
+  letter-spacing:.15em;
+}
+
+.syslab-detail h4{
+  margin:4px 0 0;
+  color:#e9ffff;
+  font-size:16px;
+}
+
+.syslab-os{
+  padding:5px 8px;
+  border:1px solid rgba(114,247,232,.16);
+  color:#75ded4;
+  font-family:monospace;
+  font-size:7px;
+}
+
+.sys-metrics{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:9px;
+  margin-top:14px;
+}
+
+.sys-meter{
+  padding:9px;
+  border:1px solid rgba(255,255,255,.055);
+}
+
+.sys-meter-head{
+  display:flex;
+  justify-content:space-between;
+  gap:6px;
+  color:#617c84;
+  font-size:7px;
+}
+
+.sys-meter-head b{
+  color:#9cfff1;
+  font-weight:500;
+}
+
+.sys-track{
+  height:3px;
+  margin-top:8px;
+  background:rgba(255,255,255,.055);
+  overflow:hidden;
+}
+
+.sys-fill{
+  height:100%;
+  width:20%;
+  background:linear-gradient(90deg,rgba(114,247,232,.35),rgba(114,247,232,.95));
+  transition:width .6s ease;
+}
+
+.sys-services{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:13px;
+}
+
+.sys-service{
+  padding:6px 8px;
+  border:1px solid rgba(255,255,255,.06);
+  color:#657f86;
+  font-size:7px;
+  letter-spacing:.09em;
+}
+
+.sys-service::before{
+  content:"";
+  display:inline-block;
+  width:5px;
+  height:5px;
+  margin-right:6px;
+  border-radius:50%;
+  background:#6af0a8;
+}
+
+.sys-actions{
+  display:flex;
+  gap:7px;
+  margin-top:14px;
+}
+
+.sys-action{
+  flex:1;
+  min-height:38px;
+  border:1px solid rgba(114,247,232,.15);
+  background:rgba(114,247,232,.035);
+  color:#88dcd4;
+  font-size:7px;
+  letter-spacing:.12em;
+}
+
+.sys-events{
+  position:relative;
+  z-index:2;
+  padding:12px 15px 15px;
+  border-top:1px solid rgba(255,255,255,.055);
+  font-family:monospace;
+}
+
+.sys-event{
+  color:#57757b;
+  font-size:8px;
+  line-height:1.7;
+}
+
+.sys-event::before{
+  content:"// ";
+  color:#72f7e8;
+}
+
+.ops-next-module{
+  padding:18px;
+  border:1px dashed rgba(114,247,232,.12);
+  color:#506970;
+  font-size:9px;
+  letter-spacing:.08em;
+  line-height:1.7;
+}
+
+@media(max-width:500px){
+  .syslab-stage{min-height:245px}
+  .sys-node{width:84px;padding:9px}
+  .sys-metrics{grid-template-columns:1fr}
+  .sys-actions{flex-direction:column}
+}
+
+/* SYSTEMS MOBILE LABEL FIX v1.1 */
+.sys-node b{white-space:nowrap}
+@media(max-width:500px){
+  .sys-node{width:96px;min-width:96px}
+}
